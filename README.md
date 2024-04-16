@@ -45,7 +45,7 @@ To use plotting functions, install with
 ### Comparison Algorithm
 - `nash`: Nash Q-learning algorithm.
 - `ind`: Independent learning algorithm.
-- `maddpg`: Multi-Agent Deep Deterministic Policy Gradient, see [maddpf](https://github.com/openai/maddpg)
+- `maddpg`: Multi-Agent Deep Deterministic Policy Gradient, see [maddpg](https://github.com/openai/maddpg)
 
 
 ### Tuining Parameters
