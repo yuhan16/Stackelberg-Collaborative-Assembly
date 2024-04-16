@@ -1,10 +1,10 @@
-# Stackelberg Task Scheduling
-This repo is for the project of Stackelberg learning in collaborative assembly task scheduling.
+# Stackelberg Learning for Collaborative Assembly Task Planning
+This repo is for the project of Stackelberg learning for collaborative assembly task planning.
 
 
 ## Requirements
-- Python 3.11 or higher
-- Pytorch 2.1.0 or higher
+- Python 3.10 or higher
+- Pytorch 2.0.1 or higher
 
 
 ## Running Scripts
