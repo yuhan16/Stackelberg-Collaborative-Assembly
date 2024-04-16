@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sg_taskplan"
+version = "0.0.1"
+description = "Stackelberg learning for collaborative assembly tasks."
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = [
+    "numpy == 1.25.0", 
+    "scipy == 1.13.0",
+    "torch == 2.0.1",
+]
+
+[project.optional-dependencies]
+visual = ["matplotlib==3.7.1"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sg_taskplan", "sg_taskplan.*"]
+
+[tool.setuptools.package-data]
+sg_taskplan = ["*.json", "*.csv"]
