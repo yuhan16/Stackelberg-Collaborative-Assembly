@@ -25,7 +25,7 @@ To use plotting functions, install with
 ```bash
 (your-venv)$ python sg_train.py
 ```
-**Note:** `sg_perturb.py` and `plot_things.py` should be run after all trainings are complete.
+**Note:** `sg_perturb.py` and `plot_things.py` should be run after all trainings are completed.
 
 
 ## Project Structure
@@ -57,7 +57,7 @@ We use `multiprocessing` package to run the training of a specific task over dif
 
 We use `bash` to run the training of different tasks in parallel. 
 
-To enable command-line options, uncomment the following in every training script:
+To enable command-line options, uncomment the following statement in every training script in the `experiments/` directory:
 ```python
 task_id = int(sys.argv[1])  # uncomment this to use bash script.
 ```
