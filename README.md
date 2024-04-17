@@ -8,7 +8,7 @@ This repo is for the project of Stackelberg learning for collaborative assembly 
 
 
 ## Running Scripts
-1. Create a python virtual envrionment with Python 3.11 and source the virtual environment: 
+1. Create a Python virtual environment with Python 3.11 and source the virtual environment: 
 ```bash
 $ python3.11 -m venv <your-virtual-env-name>
 $ source /path-to-venv/bin/activate
@@ -21,11 +21,11 @@ To use plotting functions, install with
 ```bash
 (your-venv)$ pip install -e ".[visual]"
 ```
-3. Go to `experiments/` directory and run different training scripts. e.g.,
+3. Go to the `experiments/` directory and run different training scripts. e.g.,
 ```bash
 (your-venv)$ python sg_train.py
 ```
-**Note:** `sg_perturb.py` and `plot_things.py` should be run after all trainings are completed.
+**Note:** `sg_perturb.py` and `plot_things.py` should be run after all training are completed.
 
 
 ## Project Structure
@@ -36,8 +36,8 @@ To use plotting functions, install with
     - `env.py`: environment implementations.
     - `perturbation.py`: perturbation test with Stackelberg learning models.
     - `utils.py`: miscellaneous utilities.
-- `data/`: data directory, for saving generated data and learned models.
-- `experiments/`: python scripts to run the experiments.
+- `data/`: data directory for saving generated data and learned models.
+- `experiments/`: Python scripts for running the experiments.
 - `tests/`: test scripts.
 - `scripts/`: bash scripts to run the code.
 
@@ -48,12 +48,12 @@ To use plotting functions, install with
 - `maddpg`: Multi-Agent Deep Deterministic Policy Gradient, see [maddpg](https://github.com/openai/maddpg)
 
 
-### Tuining Parameters
+### Tunning Parameters
 The hyperparameters and environment configurations are all in the `sg_task/data/` director. New customized tasks can be freely added by following the structure of Task 1-8.
 
 
 ### Parallel Running
-We use `multiprocessing` package to run the training of a specific task over different experiments in parallel. See code in `experiments/` directory. The training seeds and devices can be set manually for different experiments.
+We use the `multiprocessing` package to run the training of a specific task over different experiments in parallel. See code in the `experiments/` directory. The training seeds and devices can be set manually for different experiments.
 
 We use `bash` to run the training of different tasks in parallel. 
 
