@@ -1,0 +1,31 @@
+{
+    "task_id": 7,
+    "seed": 70962,
+    "device":"cpu",
+
+    "batch_size": 64,
+    "buffer_size": 512,    
+    "update_target_step": 50,
+    "episode_size": 10000,
+    "step_per_episode": 80,
+    
+    "leader": {
+        "learning_rate" : 1e-4,
+        "momentum" : 0.6,
+        "reward_decay": 0.9,
+        "epsilon" : 0.1,
+        "tau": 0.1,
+        "n1_feature": 128,
+        "n2_feature": 128
+    },
+
+    "follower": {
+        "learning_rate" : 1e-4,
+        "momentum" : 0.6,
+        "reward_decay": 0.9,
+        "epsilon" : 0.1,
+        "tau": 0.1,
+        "n1_feature": 128,
+        "n2_feature": 128
+    }
+}
